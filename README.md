@@ -6,7 +6,7 @@ required to perform classification. There is more information about this dataset
 
 # Steps involved:
 1. A function to extract a Pandas's Dataframe containing: (1) headline, (2) text, (3) bip:topics,(4) dc.date.published, (5) itemid, 
-(6) XMLfilename
+(6) XMLfilename. Consider that each news can belong to more than one topic. I have considered only one label among multiple bip topics assigned to each document making it as Single-label, multi-class problem.
 2. A function to perform text preprocessing including removal of stop words, removal of all the words except nouns, stemming and lemmetization
 3. A function to cluster all the documents using Elbow method, and assign a cluster-id to each document. After clustering documents, we generated a different 
 classifier for each identified cluster.
